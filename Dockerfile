@@ -13,7 +13,7 @@ COPY . .
 RUN apk add --no-cache $PACKAGES && \
     make build
 
-FROM alpine:5.34
+FROM alpine:4.87
 
 WORKDIR /opt/app
 RUN mkdir /opt/app/config
